@@ -1,0 +1,205 @@
+#container1 {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 0.3rem;
+    grid-template-areas: 
+        'header    header    header'
+        'nav       nav       nav'
+        'box-1     box-2     box-2'
+        'box-4     box-4     box-3'
+        'footer    footer    footer';
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.3rem;
+    grid-template-areas: 
+        'header    header    header'
+        'nav       nav       nav'
+        'sushi-1   sushi-2   sushi-2'
+        'sushi-3   sushi-3   sushi-3'
+        'footer    footer    footer';
+}
+
+#container3 {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 0.3rem;
+    grid-template-areas: 
+        'header    header    header'
+        'nav       nav       nav'
+        'hotpot-1  hotpot-4  hotpot-2'
+        'hotpot-1  hotpot-4  hotpot-2'
+        'hotpot-3  hotpot-3  hotpot-3'
+        'footer    footer    footer';  
+
+}
+/* ======================================================= */
+
+
+body{
+    background-color: wheat;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(99, 51, 28);
+    letter-spacing: 3px;
+    background: burlywood;
+    font-size: 2rem;
+}
+
+/* ============================NAV===================== */
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background: burlywood;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(107, 74, 33);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: rgb(167, 148, 124);
+}
+
+/* ================================================= */
+
+
+#box-1 {
+    grid-area: box-1;
+}
+
+#box-2 {
+    grid-area: box-2;   
+}
+
+#box-3 {
+    grid-area: box-3;
+}
+
+#box-4 {
+    grid-area: box-4;
+}
+
+#sushi-1 {
+    grid-area: sushi-1;
+}
+
+#sushi-2 {
+    grid-area: sushi-2;
+}
+
+#sushi-3 {
+    grid-area: sushi-3;
+}
+
+#hotpot-1 {
+    grid-area: hotpot-1;
+}
+
+#hotpot-2 {
+    grid-area: hotpot-2;   
+}
+
+#hotpot-3 {
+    grid-area: hotpot-3;
+}
+
+#hotpot-4 {
+    grid-area: hotpot-4;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background: burlywood;
+}
+
+/* ================================== */
+
+header {
+    padding: 0.5rem; 
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+
+#box-1, #box-2, #box-3, #box-4, footer {
+    border: #cccccc 1px solid;
+    padding: 0.8rem; 
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    color: rgb(165, 104, 75);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: rgb(165, 104, 75);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#box-1, #box-3 p{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 51, 28);
+}
+
+#sushi-1, #sushi-2, #sushi-3, footer {
+    border: #cccccc 1px solid;
+    padding: 0.8rem; 
+}
+
+#sushi-1, #sushi-3{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 51, 28);
+}
+
+#sushi-3 {
+    text-align: center;
+}
+
+#hotpot-1, #hotpot-2, #hotpot-4, footer {
+    border: #cccccc 1px solid;
+    padding: 0.8rem; 
+}
+
+#hotpot-2 {
+    grid-row: 3 / span 3;
+} 
+
+#hotpot-3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 51, 28);
+}
+
+#hotpot-1, #hotpot-4 {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 51, 28);
+}
